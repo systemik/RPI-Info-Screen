@@ -14,7 +14,7 @@ sudo chmod 755 /boot/cmdline.txt
 sudo chmod 644 /etc/modprobe.d/raspi-blacklist.conf
 sudo chmod 644 /etc/modules
 sudo chmod 755 /home/pi/RPi_h_r.py
-sudo chmod 755 /boot/cmdline.txt
+sudo chmod 755 /etc/rc.local
 
 sudo apt-get -y update
 sudo apt-get -y upgrade
