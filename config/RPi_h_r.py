@@ -5,7 +5,7 @@ import time
 import os
 
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(25,GPIO.IN)
+GPIO.setup(17,GPIO.IN)
 
 button_previous = 1
 button_current = 1
@@ -14,7 +14,7 @@ flag_pressed = 0
 
 while True:
 
-  button_current = GPIO.input(25);
+  button_current = GPIO.input(17);
   flag_pressed = button_previous + button_current
 
   if (not(flag_pressed)):
