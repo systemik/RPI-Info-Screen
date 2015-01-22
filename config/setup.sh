@@ -16,11 +16,7 @@ sudo chmod 644 /etc/modules
 sudo chmod 755 /home/pi/RPi_h_r.py
 sudo chmod 755 /etc/rc.local
 
-sudo apt-get -y update
-sudo apt-get -y upgrade
-sudo apt-get -y install wicd-curses
-sudo apt-get -y install atftpd
-sudo apt-get -y install screen
+sudo apt-get -y update && sudo apt-get -y upgrade && sudo apt-get -y install wicd-curses && sudo apt-get -y install atftpd && sudo apt-get -y install screen
 
 sudo REPO_URI=https://github.com/notro/rpi-firmware rpi-update
 sudo reboot
