@@ -1,0 +1,9 @@
+# /etc/modules: kernel modules to load at boot time.
+#
+# This file contains the names of kernel modules that should be loaded
+# at boot time, one per line. Lines beginning with "#" are ignored.
+# Parameters can be specified after the module name.
+ads7846_device cs=1 speed=1000000 model=7846 x_min=200 x_max=3840 y_min=200 y_max=3760 x_plate_ohms=60 pressure_max=255 gpio_pendown=17 keep_vref_on=1 swap_xy=1
+fbtft_device custom name=fb_ili9340 speed=48000000 gpios=dc:22,reset:27 bgr=1 rotate=270
+snd-bcm2835
+snd-bcm2835
