@@ -1,0 +1,23 @@
+#! /bin/sh
+# /etc/init.d/BootPython
+### BEGIN INIT INFO
+# Provides: Runs a Python script on startup Required-Start: BootPython start
+# Required-Stop: BootPython stop Default-Start: 2 3 4 5 Default-stop: 0 1 6
+# Short-Description: Simple script to run python program at boot Description: Runs a
+# python program at boot
+### END INIT INFO
+case "$1" in
+  start)
+    echo "Starting BootPython"
+    sudo python /home/pi/gpio2 &
+    ;;
+  stop)
+    echo "Stopping BootPython"
+    sudo killall Python
+    ;;
+  *)
+    echo "Usage: /etc/init.d/BootPython {start|stop}"
+    exit 1
+    ;;
+ esac
+exit 0
